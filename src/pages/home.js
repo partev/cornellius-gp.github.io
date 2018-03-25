@@ -2,13 +2,21 @@ import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faChartLine, faPuzzlePiece, faStopwatch } from '@fortawesome/fontawesome-free-solid';
 import logo from '../images/pytorch.png';
+import background from '../images/background.png';
 
 
 class Home extends React.Component {
   render() {
+    let backgroundStyle = {
+      backgroundImage: "url(" + background + ")",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    };
+
     return (
       <div>
-        <div className="jumbotron jumbotron-fluid">
+        <div className="jumbotron jumbotron-fluid shadow-bottom mb-8" style={backgroundStyle}>
           <div className="container text-center">
             <div className="row">
               <div className="col-12">
@@ -17,18 +25,18 @@ class Home extends React.Component {
                   Gaussian processes for <em>modern</em> machine learning systems.
                 </h2>
                 <div className="m-4">
-                  <img style={{maxHeight: "150px"}} src={logo} />
+                  <img style={{maxHeight: "150px"}} src={logo} alt="logo" />
                 </div>
                 <p className="lead font-weight-light h5">
                   <span className="d-block mb-1">A highly efficient and modular implementation of GPs, with GPU acceleration.</span>
-                  <strong className="font-weight-light">Implemented in <a href="http://pytorch.org" target="_blank">PyTorch</a>.</strong>
+                  <strong className="font-weight-light">Implemented in <a href="http://pytorch.org" target="_blank" rel="noopener noreferrer">PyTorch</a>.</strong>
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container">
+        <div className="container mt-8 mb-8">
           <div className="row">
             <div className="col-12 col-md-6 col-lg-4">
               <div className="text-center">
@@ -63,6 +71,16 @@ class Home extends React.Component {
                 <p>
                   Utilize <strong>GPU acceleration</strong> and state-of-the-art inference algorithms.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="install" className="jumbotron jumbotron-fluid shadow-top mt-8 mb-0">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 text-center">
+                <h2 className="display-4 font-weight-bold">Installation</h2>
               </div>
             </div>
           </div>

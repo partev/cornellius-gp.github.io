@@ -3,6 +3,39 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faChartLine, faPuzzlePiece, faStopwatch } from '@fortawesome/fontawesome-free-solid';
 import logo from '../images/pytorch.png';
 import background from '../images/background.png';
+import hljs from 'highlight.js';
+import ReactDOM from 'react-dom';
+
+
+class Code extends React.Component {
+  componentDidMount() {
+    this.highlightCode();
+  }
+
+  componentDidUpdate() {
+    this.highlightCode();
+  }
+
+  highlightCode() {
+    const domNode = ReactDOM.findDOMNode(this);
+    const nodes = domNode.querySelectorAll('pre code');
+
+    let i;
+    for (i = 0; i < nodes.length; i++) {
+      hljs.highlightBlock(nodes[i]);
+    }
+  }
+
+  render() {
+    const {className, children, ...props} = this.props;
+
+		return (
+			<pre {...props}>
+				<code className={className}>{children}</code>
+			</pre>
+		);
+  }
+}
 
 
 class Home extends React.Component {
@@ -81,7 +114,47 @@ class Home extends React.Component {
             <div className="row">
               <div className="col-12 text-center">
                 <h2 className="display-4 font-weight-bold">Installation</h2>
+                <Code className="shell pl-4 pr-4 pt-3 pb-3 mb-3 mt-3">
+pip install git+https://github.com/cornellius-gp/gpytorch.git
+                </Code>
+                <p>
+                  For more instructions, see the <a href="http://github.com/cornellius-gp/gpytorch" rel="noopener noreferrer" target="_blank">Github README</a>.
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container mt-8 mb-8">
+          <div className="row">
+            <div className="col-12 text-center">
+              <h2 className="display-4 font-weight-bold">The Team</h2>
+            </div>
+          </div>
+          <div className="row mt-3">
+            <div className="col-12 col-md-8 offset-md-2 text-center">
+              <ul className="list-group">
+                <li className="list-group-item">
+                  <a href="http://geoffpleiss.com">
+                    <img src="https://avatars2.githubusercontent.com/u/824157?s=460&v=4" alt="Geoff Pleiss" width="100px" />
+                    <h3 className="ml-5 d-inline-block">Geoff Pleiss</h3>
+                  </a>
+                </li>
+                <li className="list-group-item">
+                  <a href="http://http://www.cs.cornell.edu/~jgardner/">
+                    <img src="https://avatars3.githubusercontent.com/u/4016393?s=460&v=4" alt="Jacob R. Gardner" width="100px" />
+                    <h3 className="ml-5 d-inline-block">Jacob R. Gardner</h3>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="row mt-5">
+            <div className="col-12 text-center">
+              <figure>
+                <img className="figure-img" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" width="450px" /> 
+                <figcaption className="figure-caption">Developed at Cornell University, with funding from the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>.</figcaption>
+              </figure>
             </div>
           </div>
         </div>

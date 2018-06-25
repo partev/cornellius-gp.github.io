@@ -146,6 +146,18 @@ pip install git+https://github.com/cornellius-gp/gpytorch.git
                     <h3 className="ml-5 d-inline-block">Jacob R. Gardner</h3>
                   </a>
                 </li>
+                <li className="list-group-item">
+                  <a href="https://people.orie.cornell.edu/andrew/">
+                    <img src="https://people.orie.cornell.edu/andrew/andrewcropfast.jpg" alt="Andrew Gordon Wilson" width="100px" />
+                    <h3 className="ml-5 d-inline-block">Andrew Gordon Wilson</h3>
+                  </a>
+                </li>
+                <li className="list-group-item">
+                  <a href="http://kilian.cs.cornell.edu/">
+                    <img src="http://kilian.cs.cornell.edu/files/2015_1300_026.jpg" alt="Kilian Q. Weinberger" width="100px" />
+                    <h3 className="ml-5 d-inline-block">Kilian Q. Weinberger</h3>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

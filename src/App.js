@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/fontawesome-free-brands';
-import { faFileCode, faTerminal } from '@fortawesome/fontawesome-free-solid';
+import { faBook, faFileCode, faTerminal } from '@fortawesome/fontawesome-free-solid';
 
 import { Navbar, NavbarToggler, Collapse, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import Home from './pages/home.js';
@@ -43,13 +43,19 @@ class App extends React.Component {
                   </NavLink>
                 </NavItem>
                 <NavItem className="ml-3">
-                  <NavLink href="https://github.com/cornellius-gp/gpytorch/tree/master/examples" target="_blank" rel="noopener noreferrer">
+                  <NavLink href="https://gpytorch.readthedocs.io/" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faBook} size="1x" title="Docs" className="align-middle d-none d-lg-inline-block" />
+                    <span className="align-middle ml-2">Docs</span>
+                  </NavLink>
+                </NavItem>
+                <NavItem className="ml-3">
+                  <NavLink href="https://github.com/cornellius-gp/gpytorch/tree/master/examples" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faFileCode} size="1x" title="Examples" className="align-middle d-none d-lg-inline-block" />
                     <span className="align-middle ml-2">Examples</span>
                   </NavLink>
                 </NavItem>
                 <NavItem className="ml-3">
-                  <NavLink href="http://github.com/cornellius-gp/gpytorch" target="_blank" rel="noopener noreferrer">
+                  <NavLink href="http://github.com/cornellius-gp/gpytorch" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faGithub} size="1x" title="Github" className="align-middle d-none d-lg-inline-block" />
                     <span className="align-middle ml-2">Github</span>
                   </NavLink>

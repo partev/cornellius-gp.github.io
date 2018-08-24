@@ -1,6 +1,6 @@
 import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faChartLine, faPuzzlePiece, faStopwatch } from '@fortawesome/fontawesome-free-solid';
+import { faBook, faFileCode, faChartLine, faPuzzlePiece, faStopwatch } from '@fortawesome/fontawesome-free-solid';
 import logo from '../images/pytorch.png';
 import background from '../images/background.png';
 import hljs from 'highlight.js';
@@ -127,46 +127,71 @@ pip install git+https://github.com/cornellius-gp/gpytorch.git
 
         <div className="container mt-8 mb-8">
           <div className="row">
-            <div className="col-12 text-center">
-              <h2 className="display-4 font-weight-bold">The Team</h2>
+            <div className="col-12 col-sm-6 text-center">
+              <h2 className="display-5">Examples</h2>
+              <div className="pt-2">
+                <FontAwesomeIcon icon={faFileCode} size="4x" title="Examples" className="align-middle d-inline-block" />
+              </div>
+              <div className="pt-3 mb-4">
+                <a href="https://gpytorch.readthedocs.io/" role="button" className="btn btn-outline-info">Browse Examples</a>
+              </div>
+            </div>
+            <div className="col-12 col-sm-6 text-center">
+              <h2 className="display-5">Documentation</h2>
+              <div className="pt-2">
+                <FontAwesomeIcon icon={faBook} size="4x" title="Docs" className="align-middle d-inline-block" />
+              </div>
+              <div className="pt-3 mb-4">
+                <a href="https://gpytorch.readthedocs.io/" role="button" className="btn btn-outline-info">Browse Docs</a>
+              </div>
             </div>
           </div>
-          <div className="row mt-3">
-            <div className="col-12 col-md-8 offset-md-2 text-center">
-              <ul className="list-group">
-                <li className="list-group-item">
-                  <a href="http://geoffpleiss.com">
-                    <img src="https://avatars2.githubusercontent.com/u/824157?s=460&v=4" alt="Geoff Pleiss" width="100px" />
-                    <h3 className="ml-5 d-inline-block">Geoff Pleiss</h3>
-                  </a>
-                </li>
-                <li className="list-group-item">
-                  <a href="http://http://www.cs.cornell.edu/~jgardner/">
-                    <img src="https://avatars3.githubusercontent.com/u/4016393?s=460&v=4" alt="Jacob R. Gardner" width="100px" />
-                    <h3 className="ml-5 d-inline-block">Jacob R. Gardner</h3>
-                  </a>
-                </li>
-                <li className="list-group-item">
-                  <a href="https://people.orie.cornell.edu/andrew/">
-                    <img src="https://people.orie.cornell.edu/andrew/andrewcropfast.jpg" alt="Andrew Gordon Wilson" width="100px" />
-                    <h3 className="ml-5 d-inline-block">Andrew Gordon Wilson</h3>
-                  </a>
-                </li>
-                <li className="list-group-item">
-                  <a href="http://kilian.cs.cornell.edu/">
-                    <img src="http://kilian.cs.cornell.edu/files/2015_1300_026.jpg" alt="Kilian Q. Weinberger" width="100px" />
-                    <h3 className="ml-5 d-inline-block">Kilian Q. Weinberger</h3>
-                  </a>
-                </li>
-              </ul>
+        </div>
+
+        <div id="install" className="jumbotron jumbotron-fluid shadow-top mt-8 mb-0">
+          <div className="container mt-8 mb-8">
+            <div className="row">
+              <div className="col-12 text-center">
+                <h2 className="display-4 font-weight-bold">The Team</h2>
+              </div>
             </div>
-          </div>
-          <div className="row mt-5">
-            <div className="col-12 text-center">
-              <figure>
-                <img className="figure-img" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" width="450px" /> 
-                <figcaption className="figure-caption">Developed at Cornell University, with funding from the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>.</figcaption>
-              </figure>
+            <div className="row mt-3">
+              <div className="col-12 col-md-8 offset-md-2 text-center">
+                <ul className="list-group">
+                  <li className="list-group-item bg-light">
+                    <a href="http://geoffpleiss.com">
+                      <img src="https://avatars2.githubusercontent.com/u/824157?s=460&v=4" alt="Geoff Pleiss" width="100px" />
+                      <h3 className="ml-5 d-inline-block">Geoff Pleiss</h3>
+                    </a>
+                  </li>
+                  <li className="list-group-item bg-light">
+                    <a href="http://http://www.cs.cornell.edu/~jgardner/">
+                      <img src="https://avatars3.githubusercontent.com/u/4016393?s=460&v=4" alt="Jacob R. Gardner" width="100px" />
+                      <h3 className="ml-5 d-inline-block">Jacob R. Gardner</h3>
+                    </a>
+                  </li>
+                  <li className="list-group-item bg-light">
+                    <a href="https://people.orie.cornell.edu/andrew/">
+                      <img src="https://people.orie.cornell.edu/andrew/andrewcropfast.jpg" alt="Andrew Gordon Wilson" width="100px" />
+                      <h3 className="ml-5 d-inline-block">Andrew Gordon Wilson</h3>
+                    </a>
+                  </li>
+                  <li className="list-group-item bg-light">
+                    <a href="http://kilian.cs.cornell.edu/">
+                      <img src="http://kilian.cs.cornell.edu/files/2015_1300_026.jpg" alt="Kilian Q. Weinberger" width="100px" />
+                      <h3 className="ml-5 d-inline-block">Kilian Q. Weinberger</h3>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="row mt-5">
+              <div className="col-12 text-center">
+                <figure>
+                  <img className="figure-img" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" width="450px" /> 
+                  <figcaption className="figure-caption">Developed at Cornell University, with funding from the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>.</figcaption>
+                </figure>
+              </div>
             </div>
           </div>
         </div>

@@ -38,6 +38,30 @@ class Code extends React.Component {
 }
 
 
+class TeamMember extends React.Component {
+  render() {
+    const {name, href, img, ...props} = this.props;
+
+    return (
+      <li className="list-group-item bg-light">
+        <div className="container">
+          <div className="row">
+            <div className="col-4 col-md-2 text-left text-md-right">
+              <img src={img} alt={name} style={{maxWidth: "100px"}} />
+            </div>
+            <div className="col-8 col-md-8 align-self-center text-left text-md-center">
+              <h3 {...props}>
+                <a href={href}>{name}</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </li>
+    );
+  }
+}
+
+
 class Home extends React.Component {
   render() {
     let backgroundStyle = {
@@ -114,6 +138,10 @@ class Home extends React.Component {
             <div className="row">
               <div className="col-12 text-center">
                 <h2 className="display-4 font-weight-bold">Installation</h2>
+                <p className="pt-3">
+                  Make sure you have <a href="https://pytorch.org/get-started/locally/">PyTorch installed</a> (at least version 0.4.1).
+                  Then...
+                </p>
                 <Code className="shell pl-4 pr-4 pt-3 pb-3 mb-3 mt-3">
 pip install git+https://github.com/cornellius-gp/gpytorch.git
                 </Code>
@@ -156,32 +184,12 @@ pip install git+https://github.com/cornellius-gp/gpytorch.git
               </div>
             </div>
             <div className="row mt-3">
-              <div className="col-12 col-md-8 offset-md-2 text-center">
+              <div className="col-12 col-md-8 offset-md-2">
                 <ul className="list-group">
-                  <li className="list-group-item bg-light">
-                    <a href="http://geoffpleiss.com">
-                      <img src="https://avatars2.githubusercontent.com/u/824157?s=460&v=4" alt="Geoff Pleiss" width="100px" />
-                      <h3 className="ml-5 d-inline-block">Geoff Pleiss</h3>
-                    </a>
-                  </li>
-                  <li className="list-group-item bg-light">
-                    <a href="http://http://www.cs.cornell.edu/~jgardner/">
-                      <img src="https://avatars3.githubusercontent.com/u/4016393?s=460&v=4" alt="Jacob R. Gardner" width="100px" />
-                      <h3 className="ml-5 d-inline-block">Jacob R. Gardner</h3>
-                    </a>
-                  </li>
-                  <li className="list-group-item bg-light">
-                    <a href="https://people.orie.cornell.edu/andrew/">
-                      <img src="https://people.orie.cornell.edu/andrew/andrewcropfast.jpg" alt="Andrew Gordon Wilson" width="100px" />
-                      <h3 className="ml-5 d-inline-block">Andrew Gordon Wilson</h3>
-                    </a>
-                  </li>
-                  <li className="list-group-item bg-light">
-                    <a href="http://kilian.cs.cornell.edu/">
-                      <img src="http://kilian.cs.cornell.edu/files/2015_1300_026.jpg" alt="Kilian Q. Weinberger" width="100px" />
-                      <h3 className="ml-5 d-inline-block">Kilian Q. Weinberger</h3>
-                    </a>
-                  </li>
+                  <TeamMember name="Geoff Pleiss" href="http://geoffpleiss.com" img="https://avatars2.githubusercontent.com/u/824157?s=460&v=4" />
+                  <TeamMember name="Jacob R. Gardner" href="https://jacobrgardner.github.io/" img="https://jacobrgardner.github.io/images/me.jpg" />
+                  <TeamMember name="Kilian Q. Weinberger" href="http://kilian.cs.cornell.edu/" img="http://kilian.cs.cornell.edu/files/kilian.png" />
+                  <TeamMember name="Andrew Gordon Wilson" href="https://people.orie.cornell.edu/andrew/" img="http://www.orie.cornell.edu/engineering/customcf/iws_ai_faculty_display/ai_images/agw62-profile.jpg" />
                 </ul>
               </div>
             </div>

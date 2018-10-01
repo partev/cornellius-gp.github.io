@@ -182,7 +182,7 @@ pip install git+https://github.com/cornellius-gp/gpytorch.git
         </div>
 
         <div id="install" className="jumbotron jumbotron-fluid shadow-top mt-8 mb-0">
-          <div className="container mt-8 mb-8">
+          <div className="container">
             <div className="row">
               <div className="col-12 text-center">
                 <h2 className="display-4 font-weight-bold">The Team</h2>

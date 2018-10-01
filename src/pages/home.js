@@ -138,6 +138,11 @@ class Home extends React.Component {
             <div className="row">
               <div className="col-12 text-center">
                 <h2 className="display-4 font-weight-bold">Installation</h2>
+                <div className="alert alert-warning pt-3 pb-3" role="alert">
+                  <strong>We will be releasing GPyTorch 0.1 on October 2nd.</strong>
+                  <br />
+                  Be warned that there will be a few breaking changes (but lots of improvements!).
+                </div>
                 <p className="pt-3">
                   Make sure you have <a href="https://pytorch.org/get-started/locally/">PyTorch installed</a> (at least version 0.4.1).
                   Then...

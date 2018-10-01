@@ -198,11 +198,28 @@ pip install git+https://github.com/cornellius-gp/gpytorch.git
                 </ul>
               </div>
             </div>
+            <div className="row mt-3">
+              <div className="col-12 col-md-8 offset-md-2">
+                <p className="text-center">
+                  <strong>With (many) contributions from:</strong>
+                  &nbsp;
+                  Max Balandat,
+                  David Arbour,
+                  Eytan Bakshy,
+                  Karthik Rajkumar,
+                  Sam Stanton,
+                  Ruihan Wu,
+                  Bram Wallace,
+                  Jared Frank,
+                  and others!
+                </p>
+              </div>
+            </div>
             <div className="row mt-5">
-              <div className="col-12 text-center">
+              <div className="col-12 col-md-8 offset-md-2 text-center">
                 <figure>
                   <img className="figure-img" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" width="450px" /> 
-                  <figcaption className="figure-caption">Developed at Cornell University, with funding from the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>.</figcaption>
+                  <figcaption className="figure-caption pt-3">Developed at Cornell University, with funding from <a href="https://research.fb.com/">Facebook</a> and the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>.</figcaption>
                 </figure>
               </div>
             </div>

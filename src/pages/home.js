@@ -138,17 +138,22 @@ class Home extends React.Component {
             <div className="row">
               <div className="col-12 text-center">
                 <h2 className="display-4 font-weight-bold">Installation</h2>
-                <div className="alert alert-warning pt-3 pb-3" role="alert">
-                  <strong>We will be releasing GPyTorch 0.1 on October 2nd.</strong>
+                <div className="alert alert-primary pt-3 pb-3 ht-3" role="alert">
+                  <strong>GPyTorch 0.1.0 is out!</strong>
                   <br />
-                  Be warned that there will be a few breaking changes (but lots of improvements!).
+                  If you are coming from the alpha relase of GPyTorch, check out
+                  our <a href="https://github.com/cornellius-gp/gpytorch/wiki/Migration-guide-from-alpha-to-beta" target="_blank" rel="noopener noreferrer">Migration Guide</a>.
+                </div>
+                <div className="alert alert-warning pt-3 pb-3" role="alert">
+                  <strong>GPyTorch requires Python 3 and the PyTorch preview version (>=1.0)</strong>
+                  <br />
+                  You should install the <strong>pytorch-nightly</strong> package, not the stable version.
                 </div>
                 <p className="pt-3">
-                  Make sure you have <a href="https://pytorch.org/get-started/locally/">PyTorch installed</a> (at least version 0.4.1).
-                  Then...
+                  Make sure you have <a href="https://pytorch.org/get-started/locally/">PyTorch preview installed</a> (at least version 1.0.0).
                 </p>
                 <Code className="shell pl-4 pr-4 pt-3 pb-3 mb-3 mt-3">
-pip install git+https://github.com/cornellius-gp/gpytorch.git
+pip install gpytorch
                 </Code>
                 <p>
                   For more instructions, see the <a href="http://github.com/cornellius-gp/gpytorch" rel="noopener noreferrer" target="_blank">Github README</a>.

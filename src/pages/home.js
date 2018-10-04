@@ -2,6 +2,8 @@ import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faBook, faFileCode, faChartLine, faPuzzlePiece, faStopwatch } from '@fortawesome/fontawesome-free-solid';
 import logo from '../images/pytorch.png';
+import kilian from '../images/kilian.png';
+import andrew from '../images/andrew.jpg';
 import background from '../images/background.png';
 import hljs from 'highlight.js';
 import ReactDOM from 'react-dom';
@@ -46,11 +48,11 @@ class TeamMember extends React.Component {
       <li className="list-group-item bg-light">
         <div className="container">
           <div className="row">
-            <div className="col-4 col-md-2 text-left text-md-right">
-              <img src={img} alt={name} style={{maxWidth: "100px"}} />
+            <div className="col-4 col-sm-3 col-lg-3 text-left text-md-right">
+              <img className="img-responsive" src={img} alt={name} style={{width: "100%", maxWidth: "100px"}} />
             </div>
-            <div className="col-8 col-md-8 align-self-center text-left text-md-center">
-              <h3 {...props}>
+            <div className="col-8 col-sm-9 col-lg-6 align-self-center text-left text-lg-center">
+              <h3 className="h4" {...props}>
                 <a href={href}>{name}</a>
               </h3>
             </div>
@@ -198,8 +200,8 @@ pip install gpytorch
                 <ul className="list-group">
                   <TeamMember name="Geoff Pleiss" href="http://geoffpleiss.com" img="https://avatars2.githubusercontent.com/u/824157?s=460&v=4" />
                   <TeamMember name="Jacob R. Gardner" href="https://jacobrgardner.github.io/" img="https://jacobrgardner.github.io/images/me.jpg" />
-                  <TeamMember name="Kilian Q. Weinberger" href="http://kilian.cs.cornell.edu/" img="http://kilian.cs.cornell.edu/files/kilian.png" />
-                  <TeamMember name="Andrew Gordon Wilson" href="https://people.orie.cornell.edu/andrew/" img="http://www.orie.cornell.edu/engineering/customcf/iws_ai_faculty_display/ai_images/agw62-profile.jpg" />
+                  <TeamMember name="Kilian Q. Weinberger" href="http://kilian.cs.cornell.edu/" img={kilian}/>
+                  <TeamMember name="Andrew Gordon Wilson" href="https://people.orie.cornell.edu/andrew/" img={andrew} />
                 </ul>
               </div>
             </div>
@@ -223,7 +225,7 @@ pip install gpytorch
             <div className="row mt-5">
               <div className="col-12 col-md-8 offset-md-2 text-center">
                 <figure>
-                  <img className="figure-img" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" width="450px" /> 
+                  <img className="figure-img img-responsive" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" style={{width: "450px", maxWidth: "100%"}} /> 
                   <figcaption className="figure-caption pt-3">Developed at Cornell University, with funding from <a href="https://research.fb.com/">Facebook</a> and the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>.</figcaption>
                 </figure>
               </div>

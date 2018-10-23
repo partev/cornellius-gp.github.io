@@ -226,7 +226,7 @@ pip install gpytorch
               <div className="col-12 col-md-8 offset-md-2 text-center">
                 <figure>
                   <img className="figure-img img-responsive" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" style={{width: "450px", maxWidth: "100%"}} /> 
-                  <figcaption className="figure-caption pt-3">Developed at Cornell University, with funding from <a href="https://research.fb.com/">Facebook</a> and the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>.</figcaption>
+                  <figcaption className="figure-caption pt-3">Developed at Cornell University, with funding from <a href="https://research.fb.com/">Facebook</a>, the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>, the <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer">National Science Foundation</a>, and <a href="https://www.sap.com/index.html" target="_blank" rel="noopener noreferrer">SAP</a>.</figcaption>
                 </figure>
               </div>
             </div>

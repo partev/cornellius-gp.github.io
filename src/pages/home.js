@@ -147,12 +147,10 @@ class Home extends React.Component {
                   our <a href="https://github.com/cornellius-gp/gpytorch/wiki/Migration-guide-from-alpha-to-beta" target="_blank" rel="noopener noreferrer">Migration Guide</a>.
                 </div>
                 <div className="alert alert-warning pt-3 pb-3" role="alert">
-                  <strong>GPyTorch requires Python 3 and the PyTorch preview version (>=1.0)</strong>
-                  <br />
-                  You should install the <strong>pytorch-nightly</strong> package, not the stable version.
+                  <strong>GPyTorch requires Python >= 3.6 and PyTorch >= 1.0</strong>
                 </div>
                 <p className="pt-3">
-                  Make sure you have <a href="https://pytorch.org/get-started/locally/">PyTorch preview installed</a> (at least version 1.0.0).
+                  Make sure you have <a href="https://pytorch.org/get-started/locally/">PyTorch installed</a> (at least version 1.0.0). Then,
                 </p>
                 <Code className="shell pl-4 pr-4 pt-3 pb-3 mb-3 mt-3">
 pip install gpytorch
@@ -167,7 +165,7 @@ pip install gpytorch
 
         <div className="container mt-8 mb-8">
           <div className="row">
-            <div className="col-12 col-sm-6 text-center">
+            <div className="col-12 col-sm-6 col-md-4 offset-md-2 text-center">
               <h2 className="display-5">Examples</h2>
               <div className="pt-2">
                 <FontAwesomeIcon icon={faFileCode} size="4x" title="Examples" className="align-middle d-inline-block" />
@@ -176,7 +174,7 @@ pip install gpytorch
                 <a href="https://gpytorch.readthedocs.io/" role="button" className="btn btn-outline-info">Browse Examples</a>
               </div>
             </div>
-            <div className="col-12 col-sm-6 text-center">
+            <div className="col-12 col-sm-6 col-md-4 text-center">
               <h2 className="display-5">Documentation</h2>
               <div className="pt-2">
                 <FontAwesomeIcon icon={faBook} size="4x" title="Docs" className="align-middle d-inline-block" />
@@ -184,6 +182,25 @@ pip install gpytorch
               <div className="pt-3 mb-4">
                 <a href="https://gpytorch.readthedocs.io/" role="button" className="btn btn-outline-info">Browse Docs</a>
               </div>
+            </div>
+          </div>
+          <div className="row pt-5">
+            <div className="col-12 text-center">
+              <p>
+                To learn about GPyTorch's inference engine, please refer to our NeurIPS 2018 paper:
+                <br/>
+                <a href="https://arxiv.org/pdf/1809.11165.pdf" target="_blank" rel="noopener noreferrer">
+                  GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration
+                </a>
+              </p>
+            </div>
+            <div className="col-12 text-center">
+              <a href="https://arxiv.org/abs/1809.11165" target="_blank" rel="noopener noreferrer" role="button" className="btn btn-outline-info mr-2">
+                ArXiV
+              </a>
+              <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:Zow5BNdwWNsJ:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAXBFijM6JsAYNQAEhIIQK_JU6itiRmXAj&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1" target="_blank" rel="noopener noreferrer" role="button" className="btn btn-outline-info ml-2">
+                BibTeX
+              </a>
             </div>
           </div>
         </div>

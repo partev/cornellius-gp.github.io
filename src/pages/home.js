@@ -4,6 +4,7 @@ import { faBook, faFileCode, faChartLine, faPuzzlePiece, faStopwatch } from '@fo
 import logo from '../images/pytorch.png';
 import kilian from '../images/kilian.png';
 import andrew from '../images/andrew.jpg';
+import max from '../images/max.jpg';
 import background from '../images/background.png';
 import hljs from 'highlight.js';
 import ReactDOM from 'react-dom';
@@ -219,6 +220,7 @@ pip install gpytorch
                   <TeamMember name="Jacob R. Gardner" href="https://jacobrgardner.github.io/" img="https://jacobrgardner.github.io/images/me.jpg" />
                   <TeamMember name="Kilian Q. Weinberger" href="http://kilian.cs.cornell.edu/" img={kilian}/>
                   <TeamMember name="Andrew Gordon Wilson" href="https://people.orie.cornell.edu/andrew/" img={andrew} />
+                  <TeamMember name="Max Balandat" href="https://research.fb.com/people/balandat-max/" img={max} />
                 </ul>
               </div>
             </div>
@@ -227,7 +229,6 @@ pip install gpytorch
                 <p className="text-center">
                   <strong>With (many) contributions from:</strong>
                   &nbsp;
-                  Max Balandat,
                   David Arbour,
                   Eytan Bakshy,
                   Karthik Rajkumar,

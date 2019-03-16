@@ -6,6 +6,7 @@ import kilian from '../images/kilian.png';
 import andrew from '../images/andrew.jpg';
 import max from '../images/max.jpg';
 import background from '../images/background.png';
+import uber_ai_horizontal from '../images/uber_ai_horizontal.png'
 import hljs from 'highlight.js';
 import ReactDOM from 'react-dom';
 
@@ -117,7 +118,7 @@ class Home extends React.Component {
               <div className="text-center ml-3 mr-3">
                 <h3>Modular Design</h3>
                 <p>
-                  Combine Gaussian processes with <em>deep neural networks</em> and more. 
+                  Combine Gaussian processes with <em>deep neural networks</em> and more.
                 </p>
               </div>
             </div>
@@ -235,6 +236,7 @@ pip install gpytorch
                   Sam Stanton,
                   Ruihan Wu,
                   Bram Wallace,
+                  Ke Alexander Wang,
                   Jared Frank,
                   and others!
                 </p>
@@ -243,8 +245,9 @@ pip install gpytorch
             <div className="row mt-5">
               <div className="col-12 col-md-8 offset-md-2 text-center">
                 <figure>
-                  <img className="figure-img img-responsive" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" style={{width: "450px", maxWidth: "100%"}} /> 
-                  <figcaption className="figure-caption pt-3">Developed at Cornell University, with funding from <a href="https://research.fb.com/">Facebook</a>, the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>, the <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer">National Science Foundation</a>, and <a href="https://www.sap.com/index.html" target="_blank" rel="noopener noreferrer">SAP</a>.</figcaption>
+                  <img className="figure-img img-responsive" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" style={{width: "450px", maxWidth: "100%"}} />
+                  <img className="figure-img img-responsive" alt="Cornell University" src={uber_ai_horizontal} style={{ width: "450px", maxWidth: "100%" }} />
+                  <figcaption className="figure-caption pt-3">Developed at Cornell University and Uber AI Labs, with funding from <a href="https://research.fb.com/">Facebook</a>, the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>, the <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer">National Science Foundation</a>, and <a href="https://www.sap.com/index.html" target="_blank" rel="noopener noreferrer">SAP</a>.</figcaption>
                 </figure>
               </div>
             </div>

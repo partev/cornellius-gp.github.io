@@ -6,6 +6,7 @@ import kilian from '../images/kilian.png';
 import andrew from '../images/andrew.jpg';
 import max from '../images/max.jpg';
 import background from '../images/background.png';
+import facebook_logo from '../images/facebook_logo.png'
 import uber_ai_horizontal from '../images/uber_ai_horizontal.png'
 import hljs from 'highlight.js';
 import ReactDOM from 'react-dom';
@@ -142,12 +143,6 @@ class Home extends React.Component {
             <div className="row">
               <div className="col-12 text-center">
                 <h2 className="display-4 font-weight-bold">Installation</h2>
-                <div className="alert alert-primary pt-3 pb-3 ht-3" role="alert">
-                  <strong>GPyTorch 0.1.0 is out!</strong>
-                  <br />
-                  If you are coming from the alpha relase of GPyTorch, check out
-                  our <a href="https://github.com/cornellius-gp/gpytorch/wiki/Migration-guide-from-alpha-to-beta" target="_blank" rel="noopener noreferrer">Migration Guide</a>.
-                </div>
                 <div className="alert alert-warning pt-3 pb-3" role="alert">
                   <strong>GPyTorch requires Python >= 3.6 and PyTorch >= 1.0</strong>
                 </div>
@@ -245,9 +240,10 @@ pip install gpytorch
             <div className="row mt-5">
               <div className="col-12 col-md-8 offset-md-2 text-center">
                 <figure>
-                  <img className="figure-img img-responsive" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" style={{width: "450px", maxWidth: "100%"}} />
-                  <img className="figure-img img-responsive" alt="Cornell University" src={uber_ai_horizontal} style={{ width: "450px", maxWidth: "100%" }} />
-                  <figcaption className="figure-caption pt-3">Developed at Cornell University and Uber AI Labs, with funding from <a href="https://research.fb.com/">Facebook</a>, the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>, the <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer">National Science Foundation</a>, and <a href="https://www.sap.com/index.html" target="_blank" rel="noopener noreferrer">SAP</a>.</figcaption>
+                  <img className="figure-img img-responsive pb-3" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" style={{width: "450px", maxWidth: "100%"}} />
+                  <img className="figure-img img-responsive pb-3" alt="Facebook" src={facebook_logo} style={{ width: "450px", maxWidth: "100%" }} />
+                  <img className="figure-img img-responsive pb-3" alt="Uber AI" src={uber_ai_horizontal} style={{ width: "450px", maxWidth: "100%" }} />
+                  <figcaption className="figure-caption">Developed at Cornell University, Uber AI Labs, and Facebook, with funding from the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>, the <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer">National Science Foundation</a>, and <a href="https://www.sap.com/index.html" target="_blank" rel="noopener noreferrer">SAP</a>.</figcaption>
                 </figure>
               </div>
             </div>

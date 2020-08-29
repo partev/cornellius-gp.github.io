@@ -240,10 +240,7 @@ pip install gpytorch
             <div className="row mt-5">
               <div className="col-12 col-md-8 offset-md-2 text-center">
                 <figure>
-                  <img className="figure-img img-responsive pb-3" alt="Cornell University" src="https://brand.cornell.edu/assets/images/downloads/logos/cornell_logo_simple/cornell_logo_simple.svg" style={{width: "450px", maxWidth: "100%"}} />
-                  <img className="figure-img img-responsive pb-3" alt="Facebook" src={facebook_logo} style={{ width: "450px", maxWidth: "100%" }} />
-                  <img className="figure-img img-responsive pb-3" alt="Uber AI" src={uber_ai_horizontal} style={{ width: "450px", maxWidth: "100%" }} />
-                  <figcaption className="figure-caption">Developed at Cornell University, Uber AI Labs, and Facebook, with funding from the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>, the <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer">National Science Foundation</a>, and <a href="https://www.sap.com/index.html" target="_blank" rel="noopener noreferrer">SAP</a>.</figcaption>
+                  <figcaption className="figure-caption">Developed at Cornell University, Columbia University, University of Pennsylvania, New York University, and Facebook, with funding from the <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer">Bill and Melinda Gates Foundation</a>, the <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer">National Science Foundation</a>, and <a href="https://www.sap.com/index.html" target="_blank" rel="noopener noreferrer">SAP</a>.</figcaption>
                 </figure>
               </div>
             </div>

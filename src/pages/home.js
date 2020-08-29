@@ -144,10 +144,10 @@ class Home extends React.Component {
               <div className="col-12 text-center">
                 <h2 className="display-4 font-weight-bold">Installation</h2>
                 <div className="alert alert-warning pt-3 pb-3" role="alert">
-                  <strong>GPyTorch requires Python >= 3.6 and PyTorch >= 1.0</strong>
+                  <strong>GPyTorch requires Python >= 3.6 and PyTorch >= 1.6</strong>
                 </div>
                 <p className="pt-3">
-                  Make sure you have <a href="https://pytorch.org/get-started/locally/">PyTorch installed</a> (at least version 1.0.0). Then,
+                  Make sure you have <a href="https://pytorch.org/get-started/locally/">PyTorch installed</a> (at least version 1.6). Then,
                 </p>
                 <Code className="shell pl-4 pr-4 pt-3 pb-3 mb-3 mt-3">
 pip install gpytorch

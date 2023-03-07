@@ -1,13 +1,11 @@
 {
-  "main.css": "static/css/main.35423bda.css",
-  "main.css.map": "static/css/main.35423bda.css.map",
-  "main.js": "static/js/main.a1fd9204.js",
-  "main.js.map": "static/js/main.a1fd9204.js.map",
+  "main.css": "static/css/main.6af787a0.css",
+  "main.css.map": "static/css/main.6af787a0.css.map",
+  "main.js": "static/js/main.d9473883.js",
+  "main.js.map": "static/js/main.d9473883.js.map",
   "static/media/andrew.jpg": "static/media/andrew.b577c383.jpg",
   "static/media/background.png": "static/media/background.5f2c5699.png",
-  "static/media/facebook_logo.png": "static/media/facebook_logo.2835357a.png",
   "static/media/kilian.png": "static/media/kilian.caf07cab.png",
   "static/media/max.jpg": "static/media/max.4a02da6a.jpg",
-  "static/media/pytorch.png": "static/media/pytorch.bda027f9.png",
-  "static/media/uber_ai_horizontal.png": "static/media/uber_ai_horizontal.fe9ab653.png"
+  "static/media/pytorch.png": "static/media/pytorch.bda027f9.png"
 }
